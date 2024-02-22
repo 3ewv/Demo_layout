@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/student.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,38 +16,34 @@
 <body>
     <section class="container">
         <section class="container__body">
-            <h3>Register for Employer Account</h3>
+            <h3>Register for Student account</h3>
         </section>
         <form class="container__body">
             <section class="container__content">
                 <section class="container__body__input">
-                    <label>Company Name</label>
-                    <input type="text" class="Company_Name" required>
+                    <label>First Name</label>
+                    <input type="text" class="First_Name" required>
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
-                    <label>Representative Name (first and last name)</label>
-                    <input type="text" class="Representative_Name" required>
+                    <label>Middle Name</label>
+                    <input type="text" class="Middle_Name" required>
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
-                    <label>Title of Representative</label>
-                   <select name="" id="" class="Title_of_Representative">
-                    <option value="Mr">Mr</option>
-                    <option value="Ms">Ms</option>
-                    <option value="Mrs">Mrs</option>
-                    <option value="Ms">Ms</option>
-                   </select>
+                    <label>Date of birth</label>
+                    <section class="container__body__input_select">
+
+                        <select name="" class="day"></select>
+                        <select name="" class="month"></select>
+                        <select name="" class="years"></select>
+                    </section>
+
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Email</label>
                     <input type="email" class="Email" required>
-                    <i class="fa-solid fa-circle-check icon_edit"></i>
-                </section>
-                <section class="container__body__input">
-                    <label>Address</label>
-                    <input type="text" class="Address" required>
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
@@ -76,27 +72,32 @@
 </body>
 
 </html>
+<script src="/js/day_of_brith.js"></script>
 <script type="module">
     import { form } from "/js/function.js";
 
     var btn = document.querySelector("button");
     btn.addEventListener('click', () => {
-        var Company_Name = document.querySelector(".Company_Name").value;
-        var representative_name = document.querySelector(".Representative_Name").value;
-        var title_of_Representative = document.querySelector(".Title_of_Representative").value;
+        var First_Name = document.querySelector(".First_Name").value;
+        var Middle_Name = document.querySelector(".Middle_Name").value;
+        var day = document.querySelector(".day").value;
+        var month = document.querySelector(".month").value;
+        var years = document.querySelector(".years").value;
         var email = document.querySelector(".Email").value;
-        var address = document.querySelector(".Address").value;
         var choose_a_password = document.querySelector(".Choose_a_password").value;
         var confirm_password = document.querySelector(".Confirm_password").value;
-        if (Company_Name != "" && representative_name != "", title_of_Representative != "", email != "", address != "", choose_a_password != "", confirm_password != "") {
-            let Job = "Employed";
-            let First_Name = "Không có";
-            let Middle_Name = "Không có";
-            let University = "Không có";
-            let day_of_brith = "Không có";
-            let University_Name = "Không có";
+       
 
+        if(First_Name!="" && Middle_Name!=""&&day!=""&&month!=""&&years!=""&&choose_a_password!=""&&confirm_password!=""&&email!=""){
+            var Job = "Student";
+            var day_of_brith =day+` - `+month+` - `+years;
+            var University_Name = "Không có";
+            var Company_Name ="Không có";
+            var representative_name ="Không có";
+            var address="Không có";
+            var title_of_Representative = "Không có";
             form(University_Name,Company_Name,First_Name,representative_name,title_of_Representative,email,address,choose_a_password,confirm_password,Job);
         }
+        
     });    
 </script>
