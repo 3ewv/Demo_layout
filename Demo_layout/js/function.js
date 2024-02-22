@@ -1,5 +1,5 @@
 
-import { laydsuser,add_data } from "/js/module.js";
+import { laydsuser,add_data } from "./module.js";
 
 export async function form(University_Name,Company_Name,First_Name,representative_name,title_of_Representative,email,address,choose_a_password,confirm_password,Job){
    add_data(University_Name,Company_Name,First_Name,representative_name,title_of_Representative,email,address,choose_a_password,confirm_password,Job);
