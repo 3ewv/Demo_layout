@@ -1,0 +1,109 @@
+@import url(./employed.css);
+*{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-variation-settings:
+      "wdth" 100;
+}
+body{
+    padding: 0 ;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #919090a5;
+   
+}
+.container h3{
+    color: rgb(82, 124, 242);
+}
+
+.container__body{
+    display: flex;
+    width: 52%;
+    max-width: 52%;
+
+    flex-direction: column;
+   
+
+}
+.container__content{
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    padding: 4vh 0;
+}
+.container__body__input{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vh;
+    grid-template-columns: 19vh 54vh 9vh;
+   
+}
+
+.container__body__input>label{
+    
+    text-align: right;
+}
+.container__body__input>input{
+    border: 0.7px solid rgba(170, 170, 170, 0.493);
+    height: 4vh;
+    width: 100%;
+    border-radius: 2px;
+    outline: none;
+    padding: 0 10px;
+   
+}
+.container__body__input>i{
+    font-size: 2.2vh;
+    color: green;
+}
+
+.container__body__input:nth-child(8){
+    display: grid;
+ 
+    grid-template-columns: auto auto;
+    grid-template-areas: "aa aa bb"
+                           "cc cc cc";
+    justify-content: center;
+   
+  
+    align-items: center;
+    gap: 2vh;
+
+}
+.container__body__input:nth-child(8)>input{
+    background: green;
+    color: green;
+    grid-area: aa;
+    
+
+    
+}
+.container__body__input:nth-child(8)>button{
+    font-weight: 600;
+    background: blue;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 30%;
+    height: 5vh;
+    border-radius:100px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: cc;
+}
+
+
+.icon_edit{
+}
