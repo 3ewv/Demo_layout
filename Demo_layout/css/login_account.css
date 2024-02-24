@@ -1,0 +1,62 @@
+@import url(./index.css);
+@import url(./employed.css);
+
+.container__body{
+   
+    width: 35%;
+    max-width: 35%;
+
+   
+   
+
+}
+
+
+.container__body__input:nth-child(6){
+    display: grid;
+ 
+    grid-template-columns: auto auto;
+    grid-template-areas: "aa bb dd dd"
+                           "cc cc cc cc";
+    justify-content: center;
+
+  
+    align-items: center;
+    gap: 2vh;
+    
+
+}
+.container__body__input:nth-child(6)>input{
+    background: green;
+    color: green;
+    grid-area: aa;
+    
+
+    
+}
+.container__body__input:nth-child(6)>button{
+    font-weight: 600;
+    background: blue;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 30%;
+    height: 5vh;
+    border-radius:100px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: cc;
+}
+.container__body__input:nth-child(6)>span:nth-child(3){
+   transition: 0.5s ease-in;
+   transform: translateX(21vh);
+   
+}
+.container__body__input:nth-child(6)>span:nth-child(3):hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.icon_edit{
+}

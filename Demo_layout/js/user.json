@@ -1,0 +1,336 @@
+{
+  "user": [
+    {
+      "id": "27ad",
+      "First_Name": "ssss",
+      "Middle_Name": "scascasa",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "wwww",
+      "confirm_password": "www",
+      "type": "student"
+    },
+    {
+      "id": "407a",
+      "First_Name": "leminhtri",
+      "Middle_Name": "scascasa",
+      "Date_Of_Birth": "2024-02-08",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "push": {
+        "name": "type",
+        "value": "student"
+      }
+    },
+    {
+      "first_name": "nguyenvanba",
+      "given_name": "undefined",
+      "date_of_birth": "2024-02-02",
+      "email": "ssssss@gmail.com",
+      "phone_number": "undefined",
+      "university_email": "undefined",
+      "student_id": "58fd",
+      "gpa": "undefined",
+      "year_lever": "1",
+      "your_current_password": "123",
+      "new_password": "undefined",
+      "confirm_password": "undefined",
+      "id": "58fd"
+    },
+    {
+      "id": "0332",
+      "First_Name": "scc",
+      "Middle_Name": "sasaacs",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "csasac",
+      "confirm_password": "assac",
+      "type": "student"
+    },
+    {
+      "first_name": "banhbao",
+      "given_name": "heloo",
+      "date_of_birth": "ssssss",
+      "email": "banhbao123@gmail.com",
+      "phone_number": "undefined",
+      "university_email": "undefined",
+      "student_id": "d5eb",
+      "gpa": "undefined",
+      "year_lever": "1",
+      "your_current_password": "123",
+      "new_password": "undefined",
+      "confirm_password": "undefined",
+      "id": "d5eb"
+    },
+    {
+      "first_name": "banlaai",
+      "given_name": "undefined",
+      "date_of_birth": "",
+      "email": "123@gmail.com",
+      "phone_number": "undefined",
+      "university_email": "undefined",
+      "student_id": "b2f3",
+      "gpa": "undefined",
+      "year_lever": "1",
+      "choose_a_password": "1234",
+      "confirm_password": "1234",
+      "id": "b2f3"
+    },
+    {
+      "first_name": "toilatri",
+      "type": "student",
+      "given_name": "undefined",
+      "date_of_birth": "2024-02-08",
+      "email": "123@gmail.com",
+      "phone_number": "undefined",
+      "university_email": "undefined",
+      "student_id": "4669",
+      "gpa": "undefined",
+      "year_lever": "1",
+      "choose_a_password": "12345",
+      "confirm_password": "12345",
+      "id": "4669"
+    },
+    {
+      "First_Name": "123ngulam",
+      "type": "student",
+      "given_name": "",
+      "Date_Of_Birth": "2024-02-03",
+      "email": "bactv816@gmail.com",
+      "phone_number": "",
+      "university_email": "",
+      "id": "f4fd",
+      "gpa": "",
+      "year_lever": "1",
+      "choose_a_password": "123",
+      "confirm_password": "123"
+    },
+    {
+      "id": "8598",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "c7da",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "b77a",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "e4c1",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "f69b",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "c8ae",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "8c9a",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "cb36",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "60ae",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "cc01",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "2396",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "ec29",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "4b97",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "74ed",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "1c02",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "4df7",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "b669",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "ce5a",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "9292",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "id": "c11f",
+      "First_Name": "mama",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "ssssss@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    },
+    {
+      "First_Name": "mama",
+      "type": "student",
+      "choose_a_password": "3333",
+      "confirm_password": "333",
+      "given_name": "4444",
+      "Date_Of_Birth": "2024-02-10",
+      "email": "123@gmail.com",
+      "phone_number": "ascacsasacsacacs",
+      "university": "1",
+      "university_email": "csacsacsacs",
+      "id": "f1b8",
+      "major": "1",
+      "gpa": "wdsaccsas",
+      "year_lever": "2"
+    },
+    {
+      "id": "4610",
+      "First_Name": "chua",
+      "Middle_Name": "",
+      "Date_Of_Birth": "",
+      "email": "hello@gmail.com",
+      "choose_a_password": "123",
+      "confirm_password": "123",
+      "type": "student"
+    }
+  ]
+}

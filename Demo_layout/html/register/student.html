@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <section class="container__body">
+            <h3>Register for Student account</h3>
+        </section>
+        <form class="form" id="form">
+            <section class="container__content">
+                <section class="container__body__input">
+                    <label>First Name</label>
+                    <input type="text" class="First_Name" name="First_Name">
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                </section>
+                <section class="container__body__input">
+                    <label>Middle Name</label>
+                    <input type="text" class="Middle_Name" name="Middle_Name">
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                </section>
+                <section class="container__body__input">
+                    <label>Date of birth</label>
+                    <input class="Date_Of_Birth" type="date" name="Date_Of_Birth"/>
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                </section>
+                <section class="container__body__input">
+                    <label>Email</label>
+                    <input type="email" class="Email" name="email">
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                </section>
+                <section class="container__body__input">
+                    <label>Choose a password</label>
+                    <input type="password" class="Choose_a_password" name="choose_a_password">
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                    <section></section>
+                </section>
+                <section class="container__body__input">
+                    <label>Confirm password</label>
+                    <input type="password" class="Confirm_password" name="confirm_password">
+                    <i class="fa-solid fa-circle-check icon_edit"></i>
+                    <section></section>
+                </section>
+                <section class="container__body__input" >
+                    <input type="checkbox" required>
+                    <span>I accept the IT Acceptable Use Policy, and disclaimer</span>
+                    <button type="submit">
+                        Register
+                        <i class="fa-solid fa-chevron-right "></i>
+                    </button>
+                </section>
+            </section>
+        </form>
+    </section>
+</body>
+
+</html>
+<script type="module">
+   import { add_data } from "/Demo_layout/js/module.js";
+   $(document).ready(function () {
+            $("#form").submit(function (event) {
+                event.preventDefault();
+                var formDataArray = $('#form').serializeArray();
+
+                // Convert array to object
+                var formDataObject = {};
+                formDataArray.forEach(function (item) {
+                    formDataObject[item.name] = item.value;
+                });
+                formDataObject.type = "student";
+
+                add_data(formDataObject);
+            });
+        });
+
+   
+</script>
