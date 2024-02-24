@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -18,41 +20,41 @@
         <section class="container__body">
             <h3>Register for Student account</h3>
         </section>
-        <form class="container__body">
+        <form class="form" id="form">
             <section class="container__content">
                 <section class="container__body__input">
                     <label>First Name</label>
-                    <input type="text" class="First_Name" required>
+                    <input type="text" class="First_Name" name="First_Name">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Middle Name</label>
-                    <input type="text" class="Middle_Name" required>
+                    <input type="text" class="Middle_Name" name="Middle_Name">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Date of birth</label>
-                    <input class="Date_Of_Birth" type="date" />
+                    <input class="Date_Of_Birth" type="date" name="Date_Of_Birth"/>
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Email</label>
-                    <input type="email" class="Email" required>
+                    <input type="email" class="Email" name="email">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Choose a password</label>
-                    <input type="password" class="Choose_a_password" required>
+                    <input type="password" class="Choose_a_password" name="choose_a_password">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                     <section></section>
                 </section>
                 <section class="container__body__input">
                     <label>Confirm password</label>
-                    <input type="password" class="Confirm_password" required>
+                    <input type="password" class="Confirm_password" name="confirm_password">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                     <section></section>
                 </section>
-                <section class="container__body__input">
+                <section class="container__body__input" >
                     <input type="checkbox" required>
                     <span>I accept the IT Acceptable Use Policy, and disclaimer</span>
                     <button type="submit">
@@ -67,31 +69,22 @@
 
 </html>
 <script type="module">
-    import { form } from "../../js/function.js";
+   import { add_data } from "/Demo_layout/js/module.js";
+   $(document).ready(function () {
+            $("#form").submit(function (event) {
+                event.preventDefault();
+                var formDataArray = $('#form').serializeArray();
 
-    var btn = document.querySelector("button");
-    btn.addEventListener('click', () => {
-        var First_Name = document.querySelector(".First_Name").value;
-        var Middle_Name = document.querySelector(".Middle_Name").value;
-        var day = document.querySelector(".day").value;
-        var month = document.querySelector(".month").value;
-        var years = document.querySelector(".years").value;
-        var email = document.querySelector(".Email").value;
-        var choose_a_password = document.querySelector(".Choose_a_password").value;
-        var confirm_password = document.querySelector(".Confirm_password").value;
-        var confirm_password = document.querySelector(".Confirm_password").value;
-       
+                // Convert array to object
+                var formDataObject = {};
+                formDataArray.forEach(function (item) {
+                    formDataObject[item.name] = item.value;
+                });
+                formDataObject.type = "student";
 
-        if(First_Name!="" && Middle_Name!=""&&day!=""&&month!=""&&years!=""&&choose_a_password!=""&&confirm_password!=""&&email!=""){
-            var Job = "Student";
-            var day_of_brith =day+` - `+month+` - `+years;
-            var University_Name = "Không có";
-            var Company_Name ="Không có";
-            var representative_name ="Không có";
-            var address="Không có";
-            var title_of_Representative = "Không có";
-            form(University_Name,Company_Name,First_Name,representative_name,title_of_Representative,email,address,choose_a_password,confirm_password,Job);
-        }
-        
-    });    
+                add_data(formDataObject);
+            });
+        });
+
+   
 </script>

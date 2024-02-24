@@ -44,14 +44,15 @@
                 </section>
                 <section class="container__body__input">
                     <label>Type</label>
-                   <select name="" id="" class="Job">
-                    <option value="Student">Student</option>
-                    <option value="Employed">Employed</option>
+                   <select name="type" id="" class="type">
+                    <option value="student">student</option>
+                    <option value="employed">employed</option>
+                    <option value="university">university</option>
                    </select>
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
-                    <input type="checkbox" required>
+                    <input type="checkbox">
                     <span>I accept</span>
                     <span class="btn_dk">Chuyển sang đăng ký ?</span>
                     <button>
@@ -77,16 +78,16 @@
         var Email = document.querySelector(".Email").value;
         var Choose_a_password = document.querySelector(".Choose_a_password").value;
         var Confirm_password = document.querySelector(".Confirm_password").value;
-        var Job = document.querySelector(".Job").value;
+        var type = document.querySelector(".type").value;
         
       
        
-        if (User_Name !="", Email != "", Choose_a_password != "", Confirm_password != "",Job != "") {
-            check_user(User_Name,Email, Choose_a_password, Confirm_password,Job);
+        if (User_Name !="", Email != "", Choose_a_password != "", Confirm_password != "",type != "") {
+            check_user(User_Name,Email, Choose_a_password, Confirm_password,type);
         }
     });
     
     btn_dk.addEventListener('click',()=>{
-        window.location.href="demo_student.html";
+        window.location.href="./register/student.html";
     })
 </script>

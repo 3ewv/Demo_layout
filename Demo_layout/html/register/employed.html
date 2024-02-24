@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -18,21 +20,21 @@
         <section class="container__body">
             <h3>Register for Employer Account</h3>
         </section>
-        <form class="container__body">
+        <form id="form">
             <section class="container__content">
                 <section class="container__body__input">
                     <label>Company Name</label>
-                    <input type="text" class="Company_Name" required>
+                    <input type="text" class="Company_Name" name="Company_Name">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Representative Name (first and last name)</label>
-                    <input type="text" class="Representative_Name" required>
+                    <input type="text" class="Representative_Name"  name="representative_name">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Title of Representative</label>
-                   <select name="" id="" class="Title_of_Representative">
+                   <select id="" class="Title_of_Representative" name="title_of_representative">
                     <option value="Mr">Mr</option>
                     <option value="Ms">Ms</option>
                     <option value="Mrs">Mrs</option>
@@ -42,23 +44,23 @@
                 </section>
                 <section class="container__body__input">
                     <label>Email</label>
-                    <input type="email" class="Email" required>
+                    <input type="email" class="Email" name="email">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Address</label>
-                    <input type="text" class="Address" required>
+                    <input type="text" class="Address" name="address">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                 </section>
                 <section class="container__body__input">
                     <label>Choose a password</label>
-                    <input type="password" class="Choose_a_password" required>
+                    <input type="password" class="Choose_a_password" name="choose_a_password">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                     <section></section>
                 </section>
                 <section class="container__body__input">
                     <label>Confirm password</label>
-                    <input type="password" class="Confirm_password" required>
+                    <input type="password" class="Confirm_password" name="confirm_password">
                     <i class="fa-solid fa-circle-check icon_edit"></i>
                     <section></section>
                 </section>
@@ -77,26 +79,20 @@
 
 </html>
 <script type="module">
-    import { form } from "../../js/function.js";
+     import { add_data } from "/Demo_layout/js/module.js";
+     $(document).ready(function () {
+        $("#form").submit(function (event) {
+            event.preventDefault();
+            var formDataArray = $('#form').serializeArray();
 
-    var btn = document.querySelector("button");
-    btn.addEventListener('click', () => {
-        var Company_Name = document.querySelector(".Company_Name").value;
-        var representative_name = document.querySelector(".Representative_Name").value;
-        var title_of_Representative = document.querySelector(".Title_of_Representative").value;
-        var email = document.querySelector(".Email").value;
-        var address = document.querySelector(".Address").value;
-        var choose_a_password = document.querySelector(".Choose_a_password").value;
-        var confirm_password = document.querySelector(".Confirm_password").value;
-        if (Company_Name != "" && representative_name != "", title_of_Representative != "", email != "", address != "", choose_a_password != "", confirm_password != "") {
-            let Job = "Employed";
-            let First_Name = "Không có";
-            let Middle_Name = "Không có";
-            let University = "Không có";
-            let day_of_brith = "Không có";
-            let University_Name = "Không có";
+            // Convert array to object
+            var formDataObject = {};
+            formDataArray.forEach(function (item) {
+                formDataObject[item.name] = item.value;
+            });
+            formDataObject.type = "employed";
 
-            form(University_Name,Company_Name,First_Name,representative_name,title_of_Representative,email,address,choose_a_password,confirm_password,Job);
-        }
-    });    
+            add_data(formDataObject);
+        });
+    });
 </script>
